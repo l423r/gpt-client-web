@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Пример простой стилизации для компонентов */
+
+input, button {
+  padding: 8px;
+  margin: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  cursor: pointer;
+}
+
+.user-message, .gpt-message {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.user-message {
+  background-color: #e5e5e5;
+  align-self: flex-end;
+}
+
+.gpt-message {
+  background-color: lightblue;
+  align-self: flex-start;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+/* Сообщения будут отображаться в блочных элементах */
+div[class*="-message"] {
+  display: block;
 }
